@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Vesty — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #faf9f5;
+    --surface: #ffffff;
+    --text: #2b2926;
+    --muted: #6e6757;
+    --accent: #5e8c43;
+    --border: #e7e3d8;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 22px; margin-bottom: 28px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .logo {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--accent); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 20px;
+  }
+  .brand-name { font-size: 20px; font-weight: 600; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 22px 0 6px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 { font-size: 20px; margin: 38px 0 10px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(94,140,67,0.35); }
+  a:hover { border-bottom-color: var(--accent); }
+  strong { font-weight: 600; }
+  .lead {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px 18px; margin: 0 0 8px;
+  }
+  .lead strong { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  @media (max-width: 480px) { body { font-size: 16px; } h1 { font-size: 26px; } .wrap { padding: 32px 18px 64px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo">V</div>
+      <span class="brand-name">Vesty</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 21 June 2026</p>
+  </header>
+
+  <p>Vesty (&ldquo;the app&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) is a privacy-first tool for tracking the vesting and unlock schedules of crypto tokens, presale/IDO allocations, and company equity (RSUs). This policy explains what data the app handles and how.</p>
+
+  <p class="lead"><strong>Summary:</strong> Vesty has no user accounts and does not collect your personal data. Everything you enter stays on your device and, if you use iCloud, in your own private iCloud account. We cannot see it.</p>
+
+  <h2>Information you enter</h2>
+  <p>You manually enter the data Vesty tracks, which may include:</p>
+  <ul>
+    <li>Asset details (token/company name, ticker/symbol, network, amounts, contract address, claim website)</li>
+    <li>Vesting schedule details (dates, cliff, duration, frequency)</li>
+    <li>Optional cost basis and purchase/grant dates</li>
+    <li>Wallet or account names and optional blockchain addresses</li>
+    <li>Claim status and per-event reminder choices</li>
+    <li>App preferences (language, currency, notifications, biometric lock)</li>
+  </ul>
+  <p>This information is <strong>never sent to us</strong>. We operate no account system and no server that stores your entries.</p>
+
+  <h2>Where your data is stored</h2>
+  <ul>
+    <li><strong>On your device.</strong> Your entries are stored locally using Apple&rsquo;s on-device database (SwiftData) and app settings storage.</li>
+    <li><strong>In your private iCloud (optional).</strong> If iCloud is enabled on your device, your data syncs through Apple&rsquo;s CloudKit to <strong>your own private iCloud account</strong> so it stays available across your devices. This data lives in your iCloud and is governed by <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>. We have no access to it.</li>
+  </ul>
+
+  <h2>Services the app uses</h2>
+  <p>To function, the app communicates with a small number of services. None of them receive the financial data you enter.</p>
+  <ul>
+    <li><strong>Apple Push Notification service (APNs)</strong> and <strong>Firebase Cloud Messaging (Google)</strong> &mdash; the app registers for notifications, which involves a device push token being handled by Apple and Google/Firebase. This is used only to deliver app notifications. See the <a href="https://firebase.google.com/support/privacy">Firebase/Google Privacy Policy</a>.</li>
+    <li><strong>Firebase Remote Config (Google)</strong> &mdash; the app fetches basic configuration (for example, the minimum supported version). This involves standard device/app information being processed by Google.</li>
+    <li><strong>jsDelivr CDN</strong> &mdash; to display an asset&rsquo;s icon, the app may request an icon image from the public jsDelivr content delivery network using the asset&rsquo;s ticker symbol. No personal data is sent.</li>
+  </ul>
+  <p>Most reminders are <strong>local notifications</strong> scheduled on your device and require no server.</p>
+
+  <h2>What we do <em>not</em> do</h2>
+  <ul>
+    <li>We do <strong>not</strong> collect, store, or sell your personal information.</li>
+    <li>We do <strong>not</strong> use analytics or advertising SDKs, and we do <strong>not</strong> track you across apps or websites.</li>
+    <li>We require <strong>no sign-up, email, or login</strong>.</li>
+  </ul>
+
+  <h2>Your control over your data</h2>
+  <ul>
+    <li>Edit or delete any entry at any time inside the app.</li>
+    <li><strong>Settings &rarr; Delete all data</strong> permanently removes your entries from this device and from your iCloud sync.</li>
+    <li>Deleting the app removes its local data from the device.</li>
+    <li>You can disable notifications, iCloud sync, or biometric lock at any time in the app or in iOS Settings.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Vesty is not directed to children under 13 (or the minimum age required in your country) and does not knowingly collect data from them.</p>
+
+  <h2>Not financial or tax advice</h2>
+  <p>Vesty is an informational tracking tool. Dates, schedules, and any holding-period indicators are reminders only and are not investment, financial, or tax advice.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the app evolves. Material changes will be reflected here with a new &ldquo;Last updated&rdquo; date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy? Email <a href="mailto:support@vestyapp.com">support@vestyapp.com</a>.</p>
+
+  <footer>&copy; 2026 Vesty. All rights reserved.</footer>
+</div>
+</body>
+</html>
