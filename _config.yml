@@ -1,0 +1,2 @@
+# Jekyll skips folders that start with a dot; the universal links' file lives in one (D41, docs/plans/system-integrations.md).
+include: [".well-known"]

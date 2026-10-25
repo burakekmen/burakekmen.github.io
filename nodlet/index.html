@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nodlet</title>
+<meta name="description" content="This link opens in Nodlet: Fairy Tales Storytime.">
+<style>
+:root {
+  --night: #1F1B42; --plum: #3A3266; --paper: #FFF3D6; --lavender: #EFE8F8;
+  --ink: #3B2F4A; --ink-soft: rgba(59, 47, 74, 0.82); --lamp: #FFD58A;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100vh; color: var(--ink);
+  background: linear-gradient(180deg, var(--night) 0, var(--plum) 260px, var(--lavender) 260px) no-repeat, var(--lavender);
+  font-family: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px; line-height: 1.6;
+}
+.wrap { max-width: 560px; margin: 0 auto; padding: 48px 16px 64px; }
+header { color: var(--paper); padding: 4px 4px 28px; text-align: center; }
+.moon { font-size: 34px; line-height: 1; color: var(--lamp); }
+h1 { font-size: 30px; line-height: 1.15; margin: 10px 0 6px; font-weight: 700; }
+.sub { margin: 0; color: rgba(255, 243, 214, 0.8); }
+.card { background: var(--paper); border-radius: 24px; padding: 26px 22px; box-shadow: 0 10px 30px rgba(31, 27, 66, 0.18); margin-bottom: 24px; }
+.card + .card { margin-top: -4px; }
+p { color: var(--ink-soft); margin: 0 0 10px; }
+p:last-child { margin-bottom: 0; }
+a { color: var(--plum); }
+footer { text-align: center; font-size: 14px; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="moon">☾</div>
+  <h1>Nodlet</h1>
+  <p class="sub">Fairy Tales Storytime</p>
+</header>
+
+<section class="card" lang="en">
+<p><strong>This link opens in Nodlet.</strong> If the app is on this device, it opens by itself. If it did not, open Nodlet from your Home Screen.</p>
+<p>Nodlet is a bedtime story app for children aged 2 to 6. Need help? See the <a href="/nodlet-support.html">support page</a>.</p>
+</section>
+
+<section class="card" lang="es">
+<p><strong>Este enlace se abre en Nodlet.</strong> Si la app está en este dispositivo, se abre sola. Si no se abrió, abre Nodlet desde tu pantalla de inicio.</p>
+<p>Nodlet es una app de cuentos para dormir para niños de 2 a 6 años. ¿Necesitas ayuda? Visita la <a href="/nodlet-support.html">página de soporte</a>.</p>
+</section>
+
+<footer>Nodlet</footer>
+</div>
+</body>
+</html>
