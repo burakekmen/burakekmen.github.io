@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Vesty — Support</title>
+<style>
+  :root {
+    --bg: #faf9f5;
+    --surface: #ffffff;
+    --text: #2b2926;
+    --muted: #6e6757;
+    --accent: #5e8c43;
+    --border: #e7e3d8;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 22px; margin-bottom: 28px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .logo {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--accent); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 20px;
+  }
+  .brand-name { font-size: 20px; font-weight: 600; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 22px 0 6px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 { font-size: 20px; margin: 38px 0 10px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(94,140,67,0.35); }
+  a:hover { border-bottom-color: var(--accent); }
+  strong { font-weight: 600; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; background: var(--surface); border: 1px solid var(--border); border-radius: 5px; padding: 1px 5px; }
+  .lead {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px 18px; margin: 0 0 8px;
+  }
+  .lead strong { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  @media (max-width: 480px) { body { font-size: 16px; } h1 { font-size: 26px; } .wrap { padding: 32px 18px 64px; } }
+  .faq h3 { font-size: 17px; margin: 26px 0 6px; }
+  .contact { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo">V</div>
+      <span class="brand-name">Vesty</span>
+    </div>
+    <h1>Support</h1>
+    <p class="updated">Last updated: 2 November 2026</p>
+  </header>
+
+  <p>Vesty keeps your token, presale and RSU vesting schedules in one place, counts down to every unlock and reminds you the day before. If something isn&rsquo;t working the way you expect, the answers below cover the most common questions.</p>
+
+  <div class="contact">
+    <strong>Contact:</strong> email <a href="mailto:ekmen.burak@hotmail.com?subject=Vesty%20support">ekmen.burak@hotmail.com</a> or use <strong>Settings &rarr; Contact us</strong> in the app, which adds your app version for you.
+  </div>
+
+  <div class="faq">
+  <h2>Reminders</h2>
+  <h3>I didn&rsquo;t get a reminder.</h3>
+  <p>Check that notifications are allowed for Vesty in <strong>iOS Settings &rarr; Notifications &rarr; Vesty</strong>, that &ldquo;Remind me&rdquo; is on for that schedule, and that a Focus mode isn&rsquo;t silencing it. Reminders are scheduled on each device, so turn them on on every iPhone or iPad where you want them.</p>
+  <h3>When does the reminder arrive?</h3>
+  <p>The day before an unlock, so you have time to prepare. The free plan includes one active reminder; Vesty Pro removes the limit.</p>
+
+  <h2>iCloud and your data</h2>
+  <h3>How do my schedules get to my other devices?</h3>
+  <p>If iCloud is on for your Apple Account, Vesty syncs through your own private iCloud. Sign in with the same Apple Account on each device and keep iCloud Drive enabled. We never see your data.</p>
+  <h3>How do I delete everything?</h3>
+  <p><strong>Settings &rarr; Delete all data</strong> removes your entries. When iCloud sync is on, they are removed from iCloud and every device signed in to it.</p>
+
+  <h2>Vesty Pro</h2>
+  <h3>What does Pro add?</h3>
+  <p>Free covers up to three schedules, one wallet and one active reminder, with tokens, presales and RSUs side by side. Vesty Pro removes those limits and adds CSV import and Excel export. Pro is available as a weekly or yearly subscription or a one-time lifetime purchase.</p>
+  <h3>I bought Pro but the app still shows limits.</h3>
+  <p>Open the Vesty Pro screen and tap <strong>Restore</strong> while signed in to the Apple Account you bought with. Subscriptions are managed and cancelled in <a href="https://apps.apple.com/account/subscriptions">your Apple Account subscriptions</a>; refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+  <h2>Import and export</h2>
+  <h3>What should my CSV file look like?</h3>
+  <p>The first row must name the columns. <code>name</code>, <code>symbol</code> and <code>allocation</code> are required; <code>type</code> (token, presale or rsu), <code>tge_date</code>, <code>tge_unlock_percent</code>, <code>cliff_months</code>, <code>vesting_months</code>, <code>frequency</code>, <code>network</code> and <code>invested</code> are optional. Commas, semicolons and tabs all work as separators, and you can review the import before anything is saved.</p>
+
+  <h2>Prices and values</h2>
+  <h3>Where do prices come from?</h3>
+  <p>Crypto prices come from CoinGecko and refresh while the app is open. From Vesty 1.2.0, RSU values always use the price you enter, so a stock ticker is never confused with a token of the same name.</p>
+
+  <h2>Face ID lock</h2>
+  <h3>Face ID isn&rsquo;t working and I can&rsquo;t get in.</h3>
+  <p>From Vesty 1.2.0, when Face ID or Touch ID isn&rsquo;t available, you can unlock with your device passcode instead. You can turn the lock off in <strong>Settings</strong>.</p>
+
+  <h2>Not financial or tax advice</h2>
+  <p>Vesty is an informational tracking tool. Dates, values and holding-period indicators are reminders only and are not investment, financial or tax advice.</p>
+  </div>
+
+  <p>Read the <a href="privacy-policy.html">privacy policy</a>.</p>
+
+  <footer>&copy; 2026 Vesty. All rights reserved.</footer>
+</div>
+</body>
+</html>
