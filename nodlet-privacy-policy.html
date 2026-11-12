@@ -49,7 +49,7 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 </header>
 
 <section class="card" id="en" lang="en">
-<p class="updated">Last updated November 1, 2026</p>
+<p class="updated">Last updated November 13, 2026</p>
 <p class="short">Nodlet is a bedtime-story app for families. It is designed so that children's information stays on your device. <strong>No accounts, no ads, no tracking.</strong></p>
 
 <h2>What stays on your device</h2>
@@ -62,7 +62,7 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>If a grown-up turns on Face ID or Touch ID for the Parent Area, your device checks the face or fingerprint itself. Nodlet only learns whether the check passed; it never receives or stores face or fingerprint data.</p>
 
 <h2>Story narration downloads</h2>
-<p>Part of the story narration is downloaded from Apple's servers after you install or update Nodlet, the same way the app itself is delivered. Apple handles these downloads, and we receive no information from them.</p>
+<p>Part of the story narration is downloaded from Apple's servers after you install or update Nodlet, the same way the app itself is delivered. Apple handles these downloads and gives us no information about them; while usage statistics are on, the app only reports whether a download arrived (see below).</p>
 
 <h2>Purchases</h2>
 <p>Subscriptions and purchases are handled by Apple. We never see your name, your Apple Account or your payment details; the app only asks Apple whether a purchase is active.</p>
@@ -77,12 +77,21 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>So that we can see how many times the app is used without crashing, Crashlytics also notes each time the app is opened, with the same random identifiers and technical details.</p>
 <p>None of this ever includes names, story text or anything a child creates, or the advertising identifier (IDFA). Crashlytics keeps reports for 90 days.</p>
 
+<h2>Usage statistics (you can turn them off)</h2>
+<p>While "Share usage statistics" is on (Parent Area → Privacy), Nodlet sends Google Analytics a small, fixed set of events. When the device's region is set to a country in the European Economic Area, the United Kingdom or Switzerland, this setting starts off and nothing is sent until a parent turns it on; elsewhere it starts on. Examples: a story was started or finished, which place and theme were chosen, a setting was changed, or whether the storyteller's voice downloads arrived. It also sends the automatic app-session events Google Analytics records.</p>
+<p>These events never include names or story text. They use:</p>
+<ul>
+  <li>a random app-instance identifier, never the advertising identifier (IDFA) or the vendor identifier (IDFV);</li>
+  <li>approximate location (country or region) that Google derives from the network address.</li>
+</ul>
+<p>We keep this data for 2 months. Turning the setting off stops it at once and deletes the analytics data stored on the device.</p>
+
 <h2>How we use these identifiers (children's privacy)</h2>
 <p>Nodlet is meant to be used by parents together with young children.</p>
 <ul>
-  <li><strong>The only internal operations:</strong> the identifiers above are collected only to keep Nodlet working well. That means finding and fixing crashes, and the network communication that requires.</li>
+  <li><strong>The only internal operations:</strong> the identifiers above are collected only to keep Nodlet working well. That means finding and fixing crashes, understanding which features are used so we can improve them, and the network communication those require.</li>
   <li><strong>What they are never used for:</strong> contacting anyone, building a profile of a child or a family, advertising of any kind, or any other purpose.</li>
-  <li><strong>How we make sure:</strong> a crash report carries only a fixed list of app states (such as which screen was open), checked in the code before anything is sent; the app contains no analytics or advertising code and no advertising identifiers; our Firebase project is not linked to any advertising product; we keep the data only for the period above; only the developer can access it.</li>
+  <li><strong>How we make sure:</strong> the app sends only a fixed list of events, checked in the code before anything is sent; advertising features are switched off in the app and in our Google accounts (no advertising identifiers, no ad personalization, no Google signals, no links to advertising products, no data sharing with other Google products); we keep the data only for the periods above; only the developer can access it.</li>
 </ul>
 <p>We do not knowingly collect any other personal information from children.</p>
 
@@ -90,10 +99,11 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>We never sell or share your data with data brokers. We never track you across other companies' apps or websites. We never show ads.</p>
 
 <h2>Service providers</h2>
-<p>Google LLC (Firebase Crashlytics) processes the data above for us under Google's data-processing terms. Data may be processed in the United States and other countries where Google operates. Apple delivers the app, the narration downloads and purchases under Apple's own privacy policy.</p>
+<p>Google LLC (Firebase Crashlytics and Google Analytics) processes the data above for us under Google's data-processing terms. Data may be processed in the United States and other countries where Google operates. Apple delivers the app, the narration downloads and purchases under Apple's own privacy policy.</p>
 
 <h2>Your choices</h2>
 <ul>
+  <li>Turn "Share usage statistics" off (or on) at any time.</li>
   <li>Deleting the app deletes everything stored on the device.</li>
   <li>To ask about or request deletion of data, e-mail <a href="mailto:ekmen.burak@hotmail.com">ekmen.burak@hotmail.com</a>. Because the data uses only a random number and no name, include the approximate date and device model so we can help.</li>
   <li>You have the right to see, correct or delete your data, to object to its use, and to complain to a data protection authority.</li>
@@ -107,7 +117,7 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 </section>
 
 <section class="card" id="es" lang="es">
-<p class="updated">Última actualización: 1 de noviembre de 2026</p>
+<p class="updated">Última actualización: 13 de noviembre de 2026</p>
 <p class="short">Nodlet es una app de cuentos para dormir pensada para familias. Está diseñada para que la información de los niños se quede en tu dispositivo. <strong>Sin cuentas, sin anuncios, sin rastreo.</strong></p>
 
 <h2>Lo que se queda en tu dispositivo</h2>
@@ -120,7 +130,7 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>Si un adulto activa Face ID o Touch ID para el Área de padres, el propio dispositivo comprueba la cara o la huella. Nodlet solo sabe si la comprobación salió bien; nunca recibe ni guarda datos de la cara ni de la huella.</p>
 
 <h2>Descargas de la narración</h2>
-<p>Parte de la narración de los cuentos se descarga de los servidores de Apple después de instalar o actualizar Nodlet, igual que se entrega la propia app. Apple gestiona estas descargas y no recibimos ninguna información de ellas.</p>
+<p>Parte de la narración de los cuentos se descarga de los servidores de Apple después de instalar o actualizar Nodlet, igual que se entrega la propia app. Apple gestiona estas descargas y no nos da ninguna información sobre ellas; mientras las estadísticas de uso estén activadas, la app solo indica si una descarga llegó (ver más abajo).</p>
 
 <h2>Compras</h2>
 <p>Apple gestiona las suscripciones y las compras. Nunca vemos tu nombre, tu cuenta de Apple ni tus datos de pago; la app solo le pregunta a Apple si una compra está activa.</p>
@@ -135,12 +145,21 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>Para que podamos ver cuántas veces se usa la app sin fallos, Crashlytics también anota cada vez que se abre la app, con los mismos identificadores aleatorios y datos técnicos.</p>
 <p>Nada de esto incluye nunca nombres, el texto de los cuentos ni nada que cree un niño, ni el identificador de publicidad (IDFA). Crashlytics guarda los informes 90 días.</p>
 
+<h2>Estadísticas de uso (puedes desactivarlas)</h2>
+<p>Mientras "Compartir estadísticas de uso" esté activado (Área de padres → Privacidad), Nodlet envía a Google Analytics un conjunto pequeño y fijo de eventos. Si la región del dispositivo es un país del Espacio Económico Europeo, el Reino Unido o Suiza, este ajuste empieza desactivado y no se envía nada hasta que un adulto lo active; en los demás casos empieza activado. Por ejemplo: se empezó o se terminó un cuento, qué lugar y qué tema se eligieron, se cambió un ajuste, o si llegaron las descargas de la voz del cuentacuentos. También envía los eventos de sesión que Google Analytics registra de forma automática.</p>
+<p>Estos eventos nunca incluyen nombres ni el texto de los cuentos. Usan:</p>
+<ul>
+  <li>un identificador aleatorio de la instalación, nunca el identificador de publicidad (IDFA) ni el del proveedor (IDFV);</li>
+  <li>una ubicación aproximada (país o región) que Google calcula a partir de la dirección de red.</li>
+</ul>
+<p>Guardamos estos datos 2 meses. Al desactivar el ajuste, el envío se detiene en el acto y se borran los datos de análisis guardados en el dispositivo.</p>
+
 <h2>Cómo usamos estos identificadores (privacidad de los niños)</h2>
 <p>Nodlet está pensada para que los padres la usen junto con niños pequeños.</p>
 <ul>
-  <li><strong>Las únicas operaciones internas:</strong> los identificadores anteriores se recogen solo para que Nodlet funcione bien. Es decir, para encontrar y corregir fallos y para la comunicación de red que eso requiere.</li>
+  <li><strong>Las únicas operaciones internas:</strong> los identificadores anteriores se recogen solo para que Nodlet funcione bien. Es decir, para encontrar y corregir fallos, para entender qué funciones se usan y así mejorarlas, y para la comunicación de red que eso requiere.</li>
   <li><strong>Para qué nunca se usan:</strong> contactar a nadie, crear un perfil de un niño o de una familia, publicidad de ningún tipo ni ningún otro fin.</li>
-  <li><strong>Cómo nos aseguramos:</strong> un informe de fallos lleva solo una lista fija de estados de la app (como la pantalla que estaba abierta), que el código revisa antes de enviar nada; la app no contiene código de análisis ni de publicidad, ni identificadores de publicidad; nuestro proyecto de Firebase no está vinculado a ningún producto de publicidad; guardamos los datos solo durante el plazo indicado; solo el desarrollador tiene acceso a ellos.</li>
+  <li><strong>Cómo nos aseguramos:</strong> la app envía solo una lista fija de eventos, que el código revisa antes de enviar nada; las funciones publicitarias están desactivadas en la app y en nuestras cuentas de Google (sin identificadores de publicidad, sin personalización de anuncios, sin Google Signals, sin vínculos con productos de publicidad y sin compartir datos con otros productos de Google); guardamos los datos solo durante los plazos indicados; solo el desarrollador tiene acceso a ellos.</li>
 </ul>
 <p>No recogemos a sabiendas ninguna otra información personal de los niños.</p>
 
@@ -148,10 +167,11 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>Nunca vendemos ni compartimos tus datos con intermediarios de datos. Nunca te rastreamos en apps o sitios web de otras empresas. Nunca mostramos anuncios.</p>
 
 <h2>Proveedores</h2>
-<p>Google LLC (Firebase Crashlytics) trata los datos anteriores por encargo nuestro, según sus condiciones de tratamiento de datos. Los datos pueden tratarse en Estados Unidos y en otros países donde opera Google. Apple entrega la app, las descargas de la narración y las compras según su propia política de privacidad.</p>
+<p>Google LLC (Firebase Crashlytics y Google Analytics) trata los datos anteriores por encargo nuestro, según sus condiciones de tratamiento de datos. Los datos pueden tratarse en Estados Unidos y en otros países donde opera Google. Apple entrega la app, las descargas de la narración y las compras según su propia política de privacidad.</p>
 
 <h2>Tus opciones</h2>
 <ul>
+  <li>Puedes desactivar (o activar) "Compartir estadísticas de uso" cuando quieras.</li>
   <li>Al borrar la app se borra todo lo guardado en el dispositivo.</li>
   <li>Para preguntar por tus datos o pedir que se borren, escribe a <a href="mailto:ekmen.burak@hotmail.com">ekmen.burak@hotmail.com</a>. Como los datos usan solo un número al azar y ningún nombre, indica la fecha aproximada y el modelo del dispositivo para que podamos ayudarte.</li>
   <li>Tienes derecho a ver, corregir o borrar tus datos, a oponerte a su uso y a presentar una reclamación ante una autoridad de protección de datos.</li>
@@ -165,7 +185,7 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 </section>
 
 <section class="card" id="de" lang="de">
-<p class="updated">Zuletzt aktualisiert am 1. November 2026</p>
+<p class="updated">Zuletzt aktualisiert am 13. November 2026</p>
 <p class="short">Nodlet ist eine App mit Gute-Nacht-Geschichten für Familien. Sie ist so gebaut, dass die Daten der Kinder auf deinem Gerät bleiben. <strong>Kein Konto, keine Werbung, kein Tracking.</strong></p>
 
 <h2>Was auf deinem Gerät bleibt</h2>
@@ -178,7 +198,7 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>Wenn ein Erwachsener Face ID oder Touch ID für den Elternbereich einschaltet, prüft dein Gerät das Gesicht oder den Fingerabdruck selbst. Nodlet erfährt nur, ob die Prüfung geklappt hat; Gesichts- oder Fingerabdruckdaten erhält oder speichert Nodlet nie.</p>
 
 <h2>Downloads der Erzählstimme</h2>
-<p>Ein Teil der Erzählstimme wird nach der Installation oder einem Update von Nodlet von Apples Servern geladen, genauso wie die App selbst. Apple wickelt diese Downloads ab, und wir erhalten dabei keine Informationen.</p>
+<p>Ein Teil der Erzählstimme wird nach der Installation oder einem Update von Nodlet von Apples Servern geladen, genauso wie die App selbst. Apple wickelt diese Downloads ab und gibt uns keine Informationen darüber; solange die Nutzungsstatistiken eingeschaltet sind, meldet die App nur, ob ein Download angekommen ist (siehe unten).</p>
 
 <h2>Käufe</h2>
 <p>Abonnements und Käufe wickelt Apple ab. Wir sehen nie deinen Namen, deinen Apple Account oder deine Zahlungsdaten; die App fragt bei Apple nur, ob ein Kauf aktiv ist.</p>
@@ -193,12 +213,21 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>Damit wir sehen, wie oft die App ohne Absturz genutzt wird, vermerkt Crashlytics außerdem jedes Öffnen der App, mit denselben zufälligen Kennungen und technischen Angaben.</p>
 <p>Nichts davon enthält je Namen, Geschichtentext, etwas, das ein Kind erstellt, oder die Werbe-ID (IDFA). Crashlytics speichert Berichte 90 Tage lang.</p>
 
+<h2>Nutzungsstatistiken (abschaltbar)</h2>
+<p>Solange „Nutzungsstatistik teilen“ eingeschaltet ist (Elternbereich → Datenschutz), sendet Nodlet eine kleine, feste Auswahl von Ereignissen an Google Analytics. Ist die Region des Geräts auf ein Land im Europäischen Wirtschaftsraum, das Vereinigte Königreich oder die Schweiz eingestellt, ist diese Einstellung zunächst aus, und es wird nichts gesendet, bis ein Elternteil sie einschaltet; anderswo ist sie zunächst an. Beispiele: Eine Geschichte wurde begonnen oder beendet, ein Ort und ein Thema wurden gewählt, eine Einstellung wurde geändert oder ob die Downloads der Erzählstimme angekommen sind. Außerdem werden die automatischen Sitzungsereignisse gesendet, die Google Analytics erfasst.</p>
+<p>Diese Ereignisse enthalten nie Namen oder Geschichtentext. Sie nutzen:</p>
+<ul>
+  <li>eine zufällige App-Instanz-Kennung, nie die Werbe-ID (IDFA) oder die Anbieter-ID (IDFV);</li>
+  <li>den ungefähren Standort (Land oder Region), den Google aus der Netzwerkadresse ableitet.</li>
+</ul>
+<p>Wir bewahren diese Daten 2 Monate lang auf. Wird die Einstellung ausgeschaltet, endet das sofort, und die auf dem Gerät gespeicherten Analysedaten werden gelöscht.</p>
+
 <h2>Wie wir diese Kennungen nutzen (Datenschutz für Kinder)</h2>
 <p>Nodlet ist dafür gedacht, dass Eltern es gemeinsam mit kleinen Kindern nutzen.</p>
 <ul>
-  <li><strong>Nur interne Abläufe:</strong> Die oben genannten Kennungen werden nur erhoben, damit Nodlet gut funktioniert. Das heißt: Abstürze finden und beheben sowie die dafür nötige Netzwerkkommunikation.</li>
+  <li><strong>Nur interne Abläufe:</strong> Die oben genannten Kennungen werden nur erhoben, damit Nodlet gut funktioniert. Das heißt: Abstürze finden und beheben, verstehen, welche Funktionen genutzt werden, um sie zu verbessern, und die dafür nötige Netzwerkkommunikation.</li>
   <li><strong>Wofür sie nie genutzt werden:</strong> um jemanden zu kontaktieren, ein Profil eines Kindes oder einer Familie zu erstellen, für Werbung jeder Art oder für andere Zwecke.</li>
-  <li><strong>Wie wir das sicherstellen:</strong> Ein Absturzbericht enthält nur eine feste Liste von App-Zuständen (etwa welcher Bildschirm offen war), die im Code geprüft wird, bevor etwas gesendet wird; die App enthält keinen Analyse- oder Werbecode und keine Werbe-IDs; unser Firebase-Projekt ist mit keinem Werbeprodukt verknüpft; wir bewahren die Daten nur für den oben genannten Zeitraum auf; nur der Entwickler hat Zugriff darauf.</li>
+  <li><strong>Wie wir das sicherstellen:</strong> Die App sendet nur eine feste Liste von Ereignissen, die im Code geprüft wird, bevor etwas gesendet wird; Werbefunktionen sind in der App und in unseren Google-Konten abgeschaltet (keine Werbe-IDs, keine personalisierte Werbung, keine Google-Signale, keine Verknüpfung mit Werbeprodukten, keine Datenweitergabe an andere Google-Produkte); wir bewahren die Daten nur für die oben genannten Zeiträume auf; nur der Entwickler hat Zugriff darauf.</li>
 </ul>
 <p>Wir erheben wissentlich keine weiteren personenbezogenen Daten von Kindern.</p>
 
@@ -206,10 +235,11 @@ footer { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top
 <p>Wir verkaufen deine Daten nie und geben sie nie an Datenhändler weiter. Wir verfolgen dich nie über Apps oder Websites anderer Unternehmen hinweg. Wir zeigen nie Werbung.</p>
 
 <h2>Dienstleister</h2>
-<p>Google LLC (Firebase Crashlytics) verarbeitet die oben genannten Daten für uns gemäß den Datenverarbeitungsbedingungen von Google. Die Daten können in den Vereinigten Staaten und in anderen Ländern verarbeitet werden, in denen Google tätig ist. Apple stellt die App und die Downloads der Erzählstimme bereit und wickelt die Käufe ab, gemäß Apples eigener Datenschutzrichtlinie.</p>
+<p>Google LLC (Firebase Crashlytics und Google Analytics) verarbeitet die oben genannten Daten für uns gemäß den Datenverarbeitungsbedingungen von Google. Die Daten können in den Vereinigten Staaten und in anderen Ländern verarbeitet werden, in denen Google tätig ist. Apple stellt die App und die Downloads der Erzählstimme bereit und wickelt die Käufe ab, gemäß Apples eigener Datenschutzrichtlinie.</p>
 
 <h2>Deine Möglichkeiten</h2>
 <ul>
+  <li>Schalte „Nutzungsstatistik teilen“ jederzeit aus (oder ein).</li>
   <li>Wenn du die App löschst, wird alles gelöscht, was auf dem Gerät gespeichert ist.</li>
   <li>Für Fragen zu deinen Daten oder um ihre Löschung zu verlangen, schreib an <a href="mailto:ekmen.burak@hotmail.com">ekmen.burak@hotmail.com</a>. Da die Daten nur eine Zufallszahl und keinen Namen nutzen, nenne bitte das ungefähre Datum und das Gerätemodell, damit wir helfen können.</li>
   <li>Du hast das Recht auf Auskunft, Berichtigung und Löschung deiner Daten, kannst ihrer Verarbeitung widersprechen und dich bei einer Datenschutz-Aufsichtsbehörde beschweren.</li>
